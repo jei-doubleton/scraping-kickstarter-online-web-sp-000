@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'pry'
 
 def create_project_hash
   # nested hash as follows:
@@ -11,4 +12,6 @@ def create_project_hash
   html = File.read('fixtures/Kickstarter.html')
 
   kickstarter = Nokogiri::HTML(html)
+
+  kickstarter.css(".project-thumbnail")
 end
