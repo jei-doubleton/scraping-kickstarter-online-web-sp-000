@@ -8,4 +8,7 @@ def create_project_hash
       #   :location => "Location",
       #   :percent_funded => "Percent Funded"
       # }
+  html = File.read('fixtures/Kickstarter.html')
+
+  kickstarter = Nokogiri::HTML(html)
 end
