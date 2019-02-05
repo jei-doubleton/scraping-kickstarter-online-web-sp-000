@@ -1,5 +1,11 @@
-# require libraries/modules here
+require Nokogiri
 
 def create_project_hash
-  # write your code here
+  # nested hash as follows:
+      # :projects => {
+      #   :image_link => "Image Link",
+      #   :description => "Description",
+      #   :location => "Location",
+      #   :percent_funded => "Percent Funded"
+      # }
 end
