@@ -13,6 +13,6 @@ def create_project_hash
 
   kickstarter = Nokogiri::HTML(html)
 
-  # kickstarter.css(".project-thumbnail")
+  kickstarter.css(".project-thumbnail").first
   binding.pry
 end
